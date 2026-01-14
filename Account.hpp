@@ -7,13 +7,17 @@
 
 class Account {
  public:
-    Account(int id, std::string name, std::string pin);
+    Account(int id, const std::string& name, const std::string& pin);
 
     bool checkPin(const std::string& pin) const;
 
     double getBalance() const;
 
-    void deposit(double money);
+    int getId() const;
+
+    std::string getName() const;
+
+    bool deposit(double money);
     
     bool withdraw(double money);
 
