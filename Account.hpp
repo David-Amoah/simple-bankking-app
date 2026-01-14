@@ -1,6 +1,6 @@
-
-#ifndef ACCOUNT_HPP
-#define ACCOUNT_HPP
+// copyright [2026] <David Osei-Amoah>
+#ifndef ACCOUNT_HPP_
+#define ACCOUNT_HPP_
 
 #include <iostream>
 #include <string>
@@ -18,15 +18,17 @@ class Account {
     std::string getName() const;
 
     bool deposit(double money);
-    
     bool withdraw(double money);
 
  private:
     int id;
-    std::string pin;  //pin is a string and not an int because leading 0s would get lost
+
+    // pin is a string and not an int because leading 0s would get lost
+    std::string pin;
+
     double balance;
     std::string name;
 };
 
 
-#endif 
+#endif  // ACCOUNT_HPP_

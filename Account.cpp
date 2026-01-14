@@ -1,4 +1,4 @@
-
+// copyright [2026] <David Osei-Amoah>
 #include <stdexcept>
 #include "Account.hpp"
 
