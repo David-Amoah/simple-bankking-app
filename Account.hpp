@@ -7,11 +7,11 @@
 
 class Account {
  public:
-    Account();
+    Account(int id, std::string name, std::string pin);
 
-    bool checkPin(std::string pin);
+    bool checkPin(const std::string& pin) const;
 
-    double getBalance();
+    double getBalance() const;
 
     void deposit(double money);
     

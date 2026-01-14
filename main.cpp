@@ -9,7 +9,7 @@ int main() {
     std::cout << "######################################################" << std::endl;
     std::cout << "###                                                ###" << std::endl;
     std::cout << "###                                                ###" << std::endl;
-    std::cout << "###               UNCHASE BANK                     ###" << std::endl;
+    std::cout << "###                UN-CHASE BANK                   ###" << std::endl;
     std::cout << "###                                                ###" << std::endl;
     std::cout << "###                                                ###" << std::endl;
     std::cout << "######################################################" << std::endl;
