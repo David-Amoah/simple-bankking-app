@@ -8,16 +8,30 @@
 
 class BankSystem {
  private:
+    Account* current;
+    std::string bankName;
     std::vector<std::unique_ptr<Account>> accounts;
-    //bool login;
     int nextId;
 
  public:
-    BankSystem(std::string bankName);
+    explicit BankSystem(std::string bankName);
 
-    Account* createAccount(std::string name, std::string pin);
-
+    // this creates a new account assigns an ID and stores the acocunt
+    Account* createAccount(std::string& name, std::string& pin);
     bool login(int id, const std::string& pin);
+    void logout();
+
+
+    // gives information about the login session
+    bool isLoggedIn() const;
+    Account* currentAccount();
+    const Account* currentAccount() const;
+
+
+    Account* findById(int id);
+    const Account* findById(int id) const;
+    const std::string& getBankName() const;
+
 
 };
 
